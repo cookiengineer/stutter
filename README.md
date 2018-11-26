@@ -32,7 +32,7 @@ machines understand, and humans do not.
 A simple example with valid stutter code:
 
 ```stutter
-let ratio be a Number with the value 0.37
+let ratio be a Number and set it to 0.37
 let variable be a Number
 set variable to 5
 
@@ -47,6 +47,29 @@ print variable to standard output
 
 comment generic calls can be done with the call verb
 call log on console with variable and ratio
+
+
+if variable is greater than 2 do
+
+	if variable is greater than 2.5 do
+		call log on console with this is an example
+	else if variable is lower than 2.5 do
+		call alert on console with this is another example
+	else
+		call log on console with foo bar
+	end of condition
+
+end of condition
+
+
+let examples be an Array and set it to 1, 3, 7 and 9
+
+for each examples as key and value do
+	let temp be value
+	add 5 to value
+	divide value by 1.76
+	call log on console with temp
+end of loop
 ```
 
 
