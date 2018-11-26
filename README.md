@@ -62,7 +62,21 @@ if variable is greater than 2 do
 end of condition
 
 
-let examples be an Array and set it to 1, 3, 7 and 9
+let examples be a Number Array
+set examples to 1, 3, 7 and 9
+
+set index 0 on examples to 4
+push 3 to examples
+
+
+comment whatever is the string representation of examples
+let whatever be a String
+join examples to whatever
+
+comment copy is the string copy of examples
+let copy be a String Array
+split whatever to copy
+
 
 for each examples as key and value do
 	let temp be value
