@@ -49,17 +49,17 @@ comment generic calls can be done with the call verb
 call log on console with variable and ratio
 
 
-if variable is greater than 2 do
+if variable is greater than 2 then
 
-	if variable is greater than 2.5 do
+	if variable is greater than 2.5 then
 		call log on console with this is an example
-	else if variable is lower than 2.5 do
+	else if variable is lower than 2.5 then
 		call alert on console with this is another example
 	else
 		call log on console with foo bar
-	end of condition
+	end
 
-end of condition
+end
 
 
 let examples be a Number Array
@@ -79,11 +79,18 @@ split whatever to copy
 
 
 for each examples as key and value do
+
 	let temp be value
 	add 5 to value
 	divide value by 1.76
-	call log on console with temp
-end of loop
+
+	if temp is greater than 5 then
+		break
+	else
+		call log on console with temp
+	end
+
+end
 ```
 
 
